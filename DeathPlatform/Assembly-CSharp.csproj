@@ -64,8 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Colbys Scripts\ActivePlayer.cs" />
+    <Compile Include="Assets\Colbys Scripts\CameraController.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerController.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Colbys Scripts\Spikes.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

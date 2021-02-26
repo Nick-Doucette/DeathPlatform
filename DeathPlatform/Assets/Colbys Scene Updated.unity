@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684e568a6867dff4f842b06927b957df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformSprite: {fileID: 21300000, guid: b7ffe05cbe32b7640aad921c0708ecc4, type: 3}
+  PlatformSprite: {fileID: 21300000, guid: 2132877858fb6db44a683ee19cf27350, type: 3}
   spriteRenderer: {fileID: 904576233}
   controller: {fileID: 914768982}
   runSpeed: 200
@@ -1640,7 +1640,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007831812, y: 0.42294526}
+  m_Offset: {x: -0.08512306, y: 0.42294526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1651,7 +1651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.2789893, y: 0.68670607}
+  m_Size: {x: 3.2044668, y: 0.68670607}
   m_EdgeRadius: 0
 --- !u!4 &1418073208
 Transform:
@@ -1700,7 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684e568a6867dff4f842b06927b957df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformSprite: {fileID: 21300000, guid: b20d50a5c29e072428d343d2ae0af201, type: 3}
+  PlatformSprite: {fileID: 21300000, guid: 5e0d311ed52b51649991d39a58a9b2a4, type: 3}
   spriteRenderer: {fileID: 579104299}
   controller: {fileID: 1571053395}
   runSpeed: 200
@@ -1849,7 +1849,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007831812, y: 0.42294526}
+  m_Offset: {x: 0.009344578, y: 0.42294526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1860,7 +1860,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.2789893, y: 0.68670607}
+  m_Size: {x: 3.221641, y: 0.68670607}
   m_EdgeRadius: 0
 --- !u!4 &1744852518
 Transform:
