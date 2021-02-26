@@ -5,13 +5,14 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float lifeTime = 4f;
-    public float moveSpeed = 1;
+    public float moveSpeed = 100;
     private ActivePlayer ap;
-
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         ap = GameObject.FindGameObjectWithTag("ActivePlayer").GetComponent<ActivePlayer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -19,7 +20,10 @@ public class Projectile : MonoBehaviour
     {
         if(lifeTime >= 0)
         {
-            transform.Translate(-Vector3.right * Time.deltaTime * moveSpeed);
+            transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
+
+           
+
             lifeTime -= Time.deltaTime;
         }
         else
@@ -28,6 +32,10 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    public void SetMoveSpeed(float speedToSet)
+    {
+        moveSpeed = speedToSet;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

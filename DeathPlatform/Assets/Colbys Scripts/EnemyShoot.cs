@@ -5,9 +5,23 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour
 {
     public GameObject fireProjectilePrefab;
-
+    public Transform shootTransform;
+    public bool isFacingRight = true;
     public void ShootProjectile()
     {
-        Instantiate(fireProjectilePrefab);
+        GameObject hold = Instantiate(fireProjectilePrefab, shootTransform.transform.position, Quaternion.identity);
+        hold.GetComponent<Projectile>().SetMoveSpeed(-6f);
+
+        if (isFacingRight)
+        {
+            hold.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            
+        }
+
     }
+
+
 }
