@@ -33,6 +33,7 @@ public class Spikes : MonoBehaviour
                 ap.SwitchActivePlayers();
             }
             collidingPlayer.GetComponent<PlayerMovement>().ChangeToPlatform();
+            
         }
     }
 }
