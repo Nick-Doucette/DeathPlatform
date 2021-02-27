@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &90509930 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 451086987530181770, guid: 27bdac4e23366af4abf04a9e8e12a13f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2323321666180422231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &126945632
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +368,6 @@ Transform:
   - {fileID: 496341935}
   - {fileID: 514870286}
   - {fileID: 2323321666180422232}
-  - {fileID: 1360870317}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -679,7 +684,7 @@ GameObject:
   - component: {fileID: 1360870317}
   - component: {fileID: 1360870316}
   m_Layer: 0
-  m_Name: ActivePlayer
+  m_Name: ActivePlayerChecker
   m_TagString: ActivePlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,11 +713,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360870315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -204.96378, y: -129.1457, z: 119.213066}
+  m_LocalPosition: {x: -1.3289642, y: -0.28562927, z: -0.7314987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 812481697}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418073206 stripped
 GameObject:
@@ -1014,6 +1019,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2265580425865865409, guid: 27bdac4e23366af4abf04a9e8e12a13f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738335207499494615, guid: 27bdac4e23366af4abf04a9e8e12a13f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565559989713980192, guid: 27bdac4e23366af4abf04a9e8e12a13f,
+        type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 90509930}
     - target: {fileID: 6897297663627632033, guid: 27bdac4e23366af4abf04a9e8e12a13f,
         type: 3}
       propertyPath: m_Name
