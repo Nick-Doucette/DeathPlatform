@@ -22,6 +22,21 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(ReloadLevelCoroutine(SceneManager.GetActiveScene().buildIndex));
     }
 
+    public void PlayGame()
+    {
+        StartCoroutine(ReloadLevelCoroutine(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    public void LoadCredits()
+    {
+        StartCoroutine(ReloadLevelCoroutine(0)); // 0 is credits
+    }
+
+    public void LoadMainScreen()
+    {
+        StartCoroutine(ReloadLevelCoroutine(1));
+    }
+
     IEnumerator ReloadLevelCoroutine(int levelIndex)
     {
         // Play animation

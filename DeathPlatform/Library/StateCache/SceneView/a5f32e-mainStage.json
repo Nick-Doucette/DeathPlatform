@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":12.940335273742676,"y":6.527514457702637,"z":-0.6575274467468262},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":4.615851879119873,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":22.150907516479493,"y":-2.1294453144073488,"z":-8.586358070373536},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":24.167545318603517,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":5.424956798553467,"y":-0.12136871367692948,"z":-274.830078125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":11.633607864379883,"orthographic":true}
 >>>>>>> Fire-pillar
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":448.82769775390627,"y":247.44345092773438,"z":-448.75},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":307.9555358886719,"orthographic":true}
+>>>>>>> TitleScreen
