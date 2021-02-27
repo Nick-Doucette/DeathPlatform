@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Sprite PlatformSprite;
-    public SpriteRenderer spriteRenderer;
     public PlayerController controller;
 
-
+    public GameObject playerSprite;
 
     float horizontalMovement = 0f;
     public float runSpeed = 40f;
@@ -16,8 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isActive = false;
 
 
-    public Collider2D[] playerColliders;
-    public GameObject platformCollider;
+    public GameObject platform;
+    public Collider2D[] platformCollider;
 
 
     // Start is called before the first frame update
@@ -59,16 +57,37 @@ public class PlayerMovement : MonoBehaviour
     public void ChangeToPlatform()
     {
         Debug.Log("ChangeToPlatform");
+
+        SoundManager.PlaySound(SoundManager.Sound.playerToPlatform);
+
         isActive = false;
-        spriteRenderer.sprite = PlatformSprite;
         controller.ChangeRigidbody2DToStatic();
         controller.SetIsPlatform(true);
-        platformCollider.SetActive(true);
-
-        for(int i = 0; i <= playerColliders.Length - 1; i++)
-        {
-            playerColliders[i].enabled = false;
-        }
         
+        for(int i = 0; i <= platformCollider.Length - 1; i++)
+        {
+            platformCollider[i].enabled = false;
+        }
+
+
+        playerSprite.SetActive(false);
+        platform.SetActive(true);
+    }
+
+    public void ChangeToPlayer()
+    {
+        Debug.Log("ChangeToPlayer");
+
+        controller.ChangeRigidbody2DToDynamic();
+        controller.SetIsPlatform(false);
+
+        for (int i = 0; i <= platformCollider.Length - 1; i++)
+        {
+            platformCollider[i].enabled = true;
+        }
+
+        playerSprite.SetActive(true);
+        platform.SetActive(false);
+
     }
 }
