@@ -70,6 +70,7 @@
     <Compile Include="Assets\Colbys Scripts\EnemyShoot.cs" />
     <Compile Include="Assets\Colbys Scripts\ImageTracker.cs" />
     <Compile Include="Assets\Colbys Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Colbys Scripts\MainMenu.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerController.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Colbys Scripts\Projectile.cs" />
