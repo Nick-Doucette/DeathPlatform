@@ -71,6 +71,12 @@ public class PlayerController : MonoBehaviour
 		m_Rigidbody2D.bodyType = RigidbodyType2D.Static;
     }
 
+	public void ChangeRigidbody2DToDynamic()
+	{
+
+		m_Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+	}
+
 	public void SetIsPlatform(bool isPlatformPar)
     {
 		isPlatform = isPlatformPar;

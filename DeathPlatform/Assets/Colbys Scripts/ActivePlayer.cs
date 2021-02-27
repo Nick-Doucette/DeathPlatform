@@ -9,12 +9,16 @@ public class ActivePlayer : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+    private bool deadTrigger = false;
+
     CameraController cam;
 
+    LevelLoader levelLoader;
     // Start is called before the first frame update
     void Start()
     {
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
+        levelLoader = GameObject.FindGameObjectWithTag("LevelLoader").GetComponent<LevelLoader>();
     }
 
     // Update is called once per frame
@@ -34,6 +38,30 @@ public class ActivePlayer : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             SwitchActivePlayers();
+        }
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if(player1.GetComponent<PlayerController>().isPlatform && !player2.GetComponent<PlayerController>().isPlatform)
+            {
+                player1.transform.position = player2.transform.position;
+                player1.GetComponent<PlayerMovement>().ChangeToPlayer();
+            }
+
+            if (!player1.GetComponent<PlayerController>().isPlatform && player2.GetComponent<PlayerController>().isPlatform)
+            {
+                player2.transform.position = player1.transform.position;
+                player2.GetComponent<PlayerMovement>().ChangeToPlayer();
+            }
+        }
+
+        if(player1.GetComponent<PlayerController>().isPlatform && player2.GetComponent<PlayerController>().isPlatform && !deadTrigger)
+        {
+            Debug.Log("Both platforms. we should be dead");
+            deadTrigger = true;
+
+            levelLoader.ReloadLevel();
+
         }
 
     }

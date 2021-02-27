@@ -69,7 +69,22 @@ public class PlayerMovement : MonoBehaviour
 
         playerSprite.SetActive(false);
         platform.SetActive(true);
-  
-        
+    }
+
+    public void ChangeToPlayer()
+    {
+        Debug.Log("ChangeToPlayer");
+
+        controller.ChangeRigidbody2DToDynamic();
+        controller.SetIsPlatform(false);
+
+        for (int i = 0; i <= platformCollider.Length - 1; i++)
+        {
+            platformCollider[i].enabled = true;
+        }
+
+        playerSprite.SetActive(true);
+        platform.SetActive(false);
+
     }
 }
