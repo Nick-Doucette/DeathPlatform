@@ -57,6 +57,7 @@ public class Projectile : MonoBehaviour
         if(collision.gameObject.tag == "PlatformCollider")
         {
             Destroy(gameObject);
+            SoundManager.PlaySound(SoundManager.Sound.fireHittingPlatform);
         }
 
     }
