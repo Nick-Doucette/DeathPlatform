@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Cells:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_Tile: {fileID: 11400000, guid: dd683f5829cb9a641979abd1fad515bf, type: 2}
 =======
   - m_Tile: {fileID: 11400000, guid: 7a373627318dc154583370310ea4a7be, type: 2}
 >>>>>>> matts-branch
+=======
+  - m_Tile: {fileID: 11400000, guid: 7b9aab466ca9967498cf050c27749d54, type: 2}
+>>>>>>> Fire-pillar
     m_Matrix:
       e00: 1
       e01: 0
