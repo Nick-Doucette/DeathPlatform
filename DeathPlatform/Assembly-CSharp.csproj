@@ -72,6 +72,8 @@
     <Compile Include="Assets\Colbys Scripts\PlayerController.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Colbys Scripts\Projectile.cs" />
+    <Compile Include="Assets\Colbys Scripts\SoundAssets.cs" />
+    <Compile Include="Assets\Colbys Scripts\SoundManager.cs" />
     <Compile Include="Assets\Colbys Scripts\Spikes.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
