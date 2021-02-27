@@ -155,6 +155,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 2022468729323224739}
   m_CeilingCheck: {fileID: 2022468730399533955}
   m_CrouchDisableCollider: {fileID: 0}
+  isPlatform: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -177,10 +178,9 @@ MonoBehaviour:
   playerSprite: {fileID: 2022468730823291489}
   runSpeed: 200
   isActive: 0
-  playerColliders:
-  - {fileID: 2022468729801966364}
-  - {fileID: 2022468729801966365}
-  platformCollider: {fileID: 2022468729917196350}
+  platform: {fileID: 0}
+  platformCollider:
+  - {fileID: 0}
 --- !u!1 &2022468729917196350
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022468730823291490}
   - component: {fileID: 2022468730823291491}
+  - component: {fileID: 7337702788899290509}
   m_Layer: 8
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -512,3 +513,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7337702788899290509
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022468730823291489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 608467ea7d309444b84806a960e6bfbf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

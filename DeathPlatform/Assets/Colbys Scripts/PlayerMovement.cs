@@ -16,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject platform;
     public Collider2D[] platformCollider;
-
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = playerSprite.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,9 +31,21 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontalMovement = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+            if(horizontalMovement == 0)
+            {
+                Debug.Log("idle");
+                anim.SetBool("Running", false);
+            }
+            else
+            {
+                Debug.Log("running");
+                anim.SetBool("Running", true);
+            }
+
             if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
+                anim.SetTrigger("Jump");
             }
         }
 
