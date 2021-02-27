@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerController>();
+        thePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         lastPlayerPosition = thePlayer.transform.position;
     }
 
