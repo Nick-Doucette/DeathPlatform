@@ -8,18 +8,24 @@ public class CameraController : MonoBehaviour
     public PlayerController thePlayer;
 
     private Vector3 lastPlayerPosition;
-    private float distanceToMove;
+    //private Vector3 lastPlayerPositionY;
+    private float distanceToMoveX;
+    private float distaneToMoveY;
 
     void Start()
     {
         thePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         lastPlayerPosition = thePlayer.transform.position;
+
     }
 
     void Update()
     {
-        distanceToMove = thePlayer.transform.position.x - lastPlayerPosition.x;
-        transform.position = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
+        distanceToMoveX = thePlayer.transform.position.x - lastPlayerPosition.x;
+        distaneToMoveY = thePlayer.transform.position.y - lastPlayerPosition.y;
+
+
+        transform.position = new Vector3(transform.position.x + distanceToMoveX, transform.position.y + distaneToMoveY, transform.position.z);
         lastPlayerPosition = thePlayer.transform.position;
     }
 

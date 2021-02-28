@@ -23,9 +23,13 @@ public class HotLady : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player")
         {
+
+            SoundManager.PlaySound(SoundManager.Sound.endLevelSound, transform.position);
+
             GameObject collidingPlayer = collision.gameObject;
 
             levelLoader.LoadNextLevel();
+            
 
         }
     }

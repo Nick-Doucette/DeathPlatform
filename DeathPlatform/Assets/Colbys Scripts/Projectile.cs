@@ -44,10 +44,10 @@ public class Projectile : MonoBehaviour
         {
             GameObject collidingPlayer = collision.gameObject;
 
-
-            
-                ap.SwitchActivePlayers();
-                collidingPlayer.GetComponent<PlayerMovement>().ChangeToPlatform();
+           
+            collidingPlayer.GetComponent<PlayerMovement>().ChangeToPlatform();
+            ap.SwitchActivePlayers();
+                
 
                 Destroy(gameObject);
             
@@ -57,7 +57,7 @@ public class Projectile : MonoBehaviour
         if(collision.gameObject.tag == "PlatformCollider")
         {
             Destroy(gameObject);
-            SoundManager.PlaySound(SoundManager.Sound.fireHittingPlatform);
+            SoundManager.PlaySound(SoundManager.Sound.fireHittingPlatform, transform.position);
         }
 
     }

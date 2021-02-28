@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("ChangeToPlatform");
 
-        SoundManager.PlaySound(SoundManager.Sound.playerToPlatform);
+        SoundManager.PlaySound(SoundManager.Sound.playerToPlatform, transform.position);
 
         isActive = false;
         controller.ChangeRigidbody2DToStatic();

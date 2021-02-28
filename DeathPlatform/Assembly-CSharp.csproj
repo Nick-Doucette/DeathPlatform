@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Colbys Scripts\ActivePlayer.cs" />
     <Compile Include="Assets\Colbys Scripts\CameraController.cs" />
+    <Compile Include="Assets\Colbys Scripts\ColbysSoundPrefabScript.cs" />
     <Compile Include="Assets\Colbys Scripts\DeleteProjectile.cs" />
     <Compile Include="Assets\Colbys Scripts\EnemyShoot.cs" />
     <Compile Include="Assets\Colbys Scripts\HotLady.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Colbys Scripts\SoundAssets.cs" />
     <Compile Include="Assets\Colbys Scripts\SoundManager.cs" />
     <Compile Include="Assets\Colbys Scripts\Spikes.cs" />
+    <Compile Include="Assets\Colbys Scripts\StartMusic.cs" />
     <Compile Include="Assets\Nicks Stuff\Scripts\FirePillar_Controller.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

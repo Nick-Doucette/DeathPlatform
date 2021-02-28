@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	private int random = 0;
+
+	private Animator anim;
+
 	[Header("Events")]
 	[Space]
 
@@ -37,18 +41,22 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		anim = GetComponentInChildren<Animator>();
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+
 	}
 
 	private void FixedUpdate()
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
+		anim.SetBool("Grounded", false);
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -58,6 +66,8 @@ public class PlayerController : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				anim.SetBool("Grounded", true);
+
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -156,6 +166,24 @@ public class PlayerController : MonoBehaviour
 				// Add a vertical force to the player.
 				m_Grounded = false;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+				random = Random.Range(0, 3);
+				Debug.Log("random: " + random);
+				switch(random)
+                {
+					case 0:
+						SoundManager.PlaySound(SoundManager.Sound.playerJump, transform.position);
+						break;
+
+					case 1:
+						SoundManager.PlaySound(SoundManager.Sound.playerJump2, transform.position);
+						break;
+
+					case 2:
+						SoundManager.PlaySound(SoundManager.Sound.playerJump3, transform.position);
+						break;
+                }
+				
 			}
 
 		}
