@@ -3,12 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ActivePlayer
     - CameraController
+    - EnemyShoot
     - HotLady
     - ImageTracker
     - LevelLoader
     - ParallaxBackground
     - PlayerController
     - PlayerMovement
+    - Projectile
     - SoundAssets
     - Spikes
     - StartSounds
@@ -16,9 +18,13 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
+    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
+    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -71,34 +77,436 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11296}
-    - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11350}
     - Class: 114
       Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 13372}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 14342}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 14396}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14504}
+    - Class: 114
+      Script: {instanceID: 14576}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/CutScene6.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11694}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 13080}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13746}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
+    - Class: 114
+      Script: {instanceID: 14396}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -146,37 +554,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13372}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 14074}
+      Script: {instanceID: 14128}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14342}
+      Script: {instanceID: 14396}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14504}
     - Class: 114
-      Script: {instanceID: 14516}
+      Script: {instanceID: 14570}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14576}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,27 +643,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 618}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11700}
     - Class: 114
-      Script: {instanceID: 11908}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12566}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12626}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 13432}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -322,21 +730,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 618}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 11908}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12566}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12626}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 13432}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 12864}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 13486}
+    - Class: 114
+      Script: {instanceID: 13706}
+    - Class: 114
+      Script: {instanceID: 13848}
+    - Class: 114
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -955,7 +1369,13 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Title Screen.unity
+  - Assets/CutScene1.unity
+  - Assets/CutScene2.unity
+  - Assets/CutScene3.unity
+  - Assets/CutScene4.unity
+  - Assets/CutScene5.unity
+  - Assets/CutScene6.unity
   - Assets/matts 1-1.unity
-  - Assets/Credits.unity
   - Assets/matts 1-2.unity
+  - Assets/Credits.unity
   playerPath: D:/Wowie Builds/DeathPlatform.exe

@@ -9,6 +9,7 @@ TagManager:
   - PlatformCollider
   - Projectile
   - LevelLoader
+  - music
   layers:
   - Default
   - TransparentFX
