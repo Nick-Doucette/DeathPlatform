@@ -126,7 +126,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2022468729801966361}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8783fba6ce0402a4b9a57a44cd95fd85, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -178,9 +178,10 @@ MonoBehaviour:
   playerSprite: {fileID: 2022468730823291489}
   runSpeed: 200
   isActive: 0
-  platform: {fileID: 0}
+  platform: {fileID: 2022468729917196350}
   platformCollider:
-  - {fileID: 0}
+  - {fileID: 2022468729801966365}
+  - {fileID: 2022468729801966364}
 --- !u!1 &2022468729917196350
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +309,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 311bfded0e8ead9489d39b4d190f3335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -419,7 +420,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 5e0d311ed52b51649991d39a58a9b2a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -501,7 +502,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 52a8706cd9065d445ba39d2086fa8daf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

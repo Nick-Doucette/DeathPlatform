@@ -29,12 +29,17 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadCredits()
     {
-        StartCoroutine(ReloadLevelCoroutine(0)); // 0 is credits
+        StartCoroutine(ReloadLevelCoroutine(2)); // 2 is credits
     }
 
     public void LoadMainScreen()
     {
-        StartCoroutine(ReloadLevelCoroutine(1));
+        StartCoroutine(ReloadLevelCoroutine(0)); // 0 is Title scene
+    }
+
+    public void LoadNextLevel()
+    {
+        StartCoroutine(ReloadLevelCoroutine(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     IEnumerator ReloadLevelCoroutine(int levelIndex)
