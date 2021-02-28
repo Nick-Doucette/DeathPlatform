@@ -133,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 418787921514900185, guid: e71f4940d243d82499973212a08d1bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,4 +179,4 @@ MonoBehaviour:
   fireProjectilePrefab: {fileID: 8403404008418807261, guid: 2d7a3b70890527a41a07db955d97aad9,
     type: 3}
   shootTransform: {fileID: 1763698943915191358}
-  isFacingRight: 1
+  isFacingRight: 0
