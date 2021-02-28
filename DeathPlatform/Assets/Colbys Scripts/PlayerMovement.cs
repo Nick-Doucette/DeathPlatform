@@ -17,11 +17,13 @@ public class PlayerMovement : MonoBehaviour
     public GameObject platform;
     public Collider2D[] platformCollider;
     private Animator anim;
+    private ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = playerSprite.GetComponent<Animator>();
+        particle = this.gameObject.transform.Find("PSPlatform").GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -81,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
             platformCollider[i].enabled = false;
         }
 
+        particle.Play();
 
         playerSprite.SetActive(false);
         platform.SetActive(true);
