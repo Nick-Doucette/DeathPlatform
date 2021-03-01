@@ -50,6 +50,10 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetTrigger("Jump");
             }
         }
+        else
+        {
+            anim.SetBool("Running", false);
+        }
 
     }
 

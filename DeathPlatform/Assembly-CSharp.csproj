@@ -74,6 +74,7 @@
     <Compile Include="Assets\Colbys Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Colbys Scripts\MainMenu.cs" />
     <Compile Include="Assets\Colbys Scripts\NewSoundManager.cs" />
+    <Compile Include="Assets\Colbys Scripts\NotFlipping.cs" />
     <Compile Include="Assets\Colbys Scripts\ParallaxBackground.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerController.cs" />
     <Compile Include="Assets\Colbys Scripts\PlayerMovement.cs" />

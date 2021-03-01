@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 35
+  controlID: 86
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 36
+  controlID: 16
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 37
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Colbys Art
+    - Assets/Colbys Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Colbys Art
+  - Assets/Colbys Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Wowie Repo\DeathPlatform\DeathPlatform
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0e3d0000
-    m_LastClickedID: 15630
-    m_ExpandedIDs: 000000000c3d00000e3d0000103d000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8c3b0000
+    m_LastClickedID: 15244
+    m_ExpandedIDs: 00000000543b0000563b0000583b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c3d00000e3d0000103d0000
+    m_ExpandedIDs: 00000000543b0000563b0000583b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -410,18 +410,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c623000036390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Nicks 1-1
-      m_OriginalName: Nicks 1-1
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15746
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -431,7 +431,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 40}
+    m_ScrollPosition: {x: 0, y: 32}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 264
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 14d3ffff1ed3ffff20d3fffffcd4ffff34d6ffffa0d7ffff54d9ffffe4daffffeedbffff46e9ffffd6e9ffffeae9fffff0eafffff4eafffff8ebffff26edffffa4eefffffaefffff48f0ffff96f0ffffe4f0ffff32f1ffff80f1ffffcef1ffff3ef2ffff8cf3ffffe0f4fffff8f5ffff54f7ffff40f9ffff985c0000985d0000fa5d0000da5e00008e5f0000
+      m_SelectedIDs: 463c0000
+      m_LastClickedID: 15430
+      m_ExpandedIDs: 4efaffff64fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 664.8983, y: 247.19476, z: -166.72476}
+    m_Target: {x: 1.59184, y: -4.495426, z: -224.2334}
     speed: 2
-    m_Value: {x: 664.8983, y: 247.19476, z: -166.72476}
+    m_Value: {x: 5.8769827, y: -0.015107494, z: -0.7824116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 336.48816
+    m_Target: 22.836668
     speed: 2
-    m_Value: 336.48816
+    m_Value: 1.5259942
   m_Ortho:
     m_Target: 1
     speed: 2
