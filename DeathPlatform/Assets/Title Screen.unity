@@ -2193,6 +2193,7 @@ MonoBehaviour:
   mechanicImages:
   - {fileID: 21300000, guid: 8ecb776b7e714b24e9b03912e3c63450, type: 3}
   - {fileID: 21300000, guid: b077f96933b9e3c48b66944ab6cb8b4c, type: 3}
+  - {fileID: 21300000, guid: b9cbfb779445f3448ae19e8b2ed0712a, type: 3}
 --- !u!1 &1435523499
 GameObject:
   m_ObjectHideFlags: 0
