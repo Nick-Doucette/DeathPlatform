@@ -29,7 +29,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadCredits()
     {
-        StartCoroutine(ReloadLevelCoroutine(9)); // 9 is credits
+        StartCoroutine(ReloadLevelCoroutine(12)); // 12 is credits
     }
 
     public void LoadMainScreen()

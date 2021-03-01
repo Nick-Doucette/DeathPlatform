@@ -2193,7 +2193,6 @@ MonoBehaviour:
   mechanicImages:
   - {fileID: 21300000, guid: 8ecb776b7e714b24e9b03912e3c63450, type: 3}
   - {fileID: 21300000, guid: b077f96933b9e3c48b66944ab6cb8b4c, type: 3}
-  - {fileID: 21300000, guid: 52a8706cd9065d445ba39d2086fa8daf, type: 3}
 --- !u!1 &1435523499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,7 +2352,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530021409}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 910e5aa18044d67459252e64a35900f4, type: 3}
