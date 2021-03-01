@@ -46,14 +46,16 @@ public class ActivePlayer : MonoBehaviour
             {
                 player1.transform.position = player2.transform.position;
                 player1.GetComponent<PlayerMovement>().ChangeToPlayer();
+                SoundManager.PlaySound(SoundManager.Sound.teleport, transform.position);
             }
 
             if (!player1.GetComponent<PlayerController>().isPlatform && player2.GetComponent<PlayerController>().isPlatform)
             {
                 player2.transform.position = player1.transform.position;
                 player2.GetComponent<PlayerMovement>().ChangeToPlayer();
+                SoundManager.PlaySound(SoundManager.Sound.teleport, transform.position);
             }
-            SoundManager.PlaySound(SoundManager.Sound.teleport, transform.position);
+            
         }
 
         if(player1.GetComponent<PlayerController>().isPlatform && player2.GetComponent<PlayerController>().isPlatform && !deadTrigger)

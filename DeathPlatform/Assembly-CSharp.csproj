@@ -83,6 +83,7 @@
     <Compile Include="Assets\Colbys Scripts\SoundManager.cs" />
     <Compile Include="Assets\Colbys Scripts\Spikes.cs" />
     <Compile Include="Assets\Colbys Scripts\StartSounds.cs" />
+    <Compile Include="Assets\Colbys Scripts\TabButtonUI.cs" />
     <Compile Include="Assets\Nicks Stuff\Scripts\FirePillar_Controller.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
